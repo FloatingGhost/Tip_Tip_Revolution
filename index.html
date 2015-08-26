@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>TTR</title>
+    <meta charset="utf-8">
+  </head>
+  <div id="game"></div>
+
+  <!--Load Scripts -->
+  <script>
+    var game = new Phaser.Game(500, 500, Phaser.AUTO, "game");
+    game.state.add('Menu', Menu, true);
+  </script>
+  
+  <script src="js/phaser.min.js"></script>
+  <script src="js/beatdetektor.js"></script>
+</html>
