@@ -6,11 +6,13 @@
   <div id="game"></div>
 
   <!--Load Scripts -->
-  <script>
-    var game = new Phaser.Game(500, 500, Phaser.AUTO, "game");
-    game.state.add('Menu', Menu, true);
-  </script>
   
-  <script src="js/phaser.min.js"></script>
-  <script src="js/beatdetektor.js"></script>
+  <script src="./js/lib/phaser.min.js"></script>
+  <script src="./js/states/game.js"></script>
+  <script src="./js/lib/SoundAnalyse.js"></script>
+  <script>
+    var game = new Phaser.Game(718, 404, Phaser.AUTO, "game");
+    game.state.add('Game', gamestate, true);
+  </script>
+
 </html>
